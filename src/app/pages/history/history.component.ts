@@ -31,7 +31,7 @@ export class HistoryComponent implements OnInit {
 
             data.files.forEach(element => {
                 console.log(element.name);
-                this.files.push({image: "https://drive.google.com/uc?export=view&id=" + element.id, year: element.name.substring(9,13)});
+                this.files.push({image: "https://drive.google.com/thumbnail?id=" + element.id, year: element.name.substring(9,13)});
             });
         });
         

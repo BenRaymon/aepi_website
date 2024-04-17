@@ -31,9 +31,9 @@ export class CompositeComponent implements OnInit {
 
             for(let brother of data){
                 if(!(<Brother>brother).image)
-                    (<Brother>brother).image = "https://drive.google.com/uc?export=view&id=1D-TTGqtB1zXYWxePaHU_mwdN5m29Puis";
+                    (<Brother>brother).image = "https://drive.google.com/thumbnail?id=1D-TTGqtB1zXYWxePaHU_mwdN5m29Puis";
                 else
-                    (<Brother>brother).image = "https://drive.google.com/uc?export=view&id=" + (<Brother>brother).image;
+                    (<Brother>brother).image = "https://drive.google.com/thumbnail?id=" + (<Brother>brother).image;
 
                 if((<Brother>brother).board)
                     this.brothers.unshift(brother);

@@ -34,7 +34,7 @@ export class GalleryComponent implements OnInit {
 		this.firebaseService.getHistorianGallery(this.year).subscribe((data: any) => {
 			if (data){
 				data.files.forEach(element => {
-					this.files.push("https://drive.google.com/uc?export=view&id=" + element.id);
+					this.files.push("https://drive.google.com/thumbnail?id=" + element.id);
 				});
 
 				this.loading = false;

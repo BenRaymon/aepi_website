@@ -37,7 +37,7 @@ export class BrotherhoodComponent implements OnInit {
 
         this.firebaseService.getFolderContents(environment.brotherhoodDriveID).subscribe((data: any) => {
             data.files.forEach(element => {
-                this.files.push("https://drive.google.com/uc?export=view&id=" + element.id);
+                this.files.push("https://drive.google.com/thumbnail?id=" + element.id);
             });
         });
         
